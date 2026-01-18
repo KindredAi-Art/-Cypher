@@ -6,22 +6,13 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferWindowMemory
-from langchain.prompts import (
-    ChatPromptTemplate,
-    MessagesPlaceholder,
-    SystemMessagePromptTemplate,
-    HumanMessagePromptTemplate,
-)
+from langchain.prompts import (ChatPromptTemplate, MessagesPlaceholder, SystemMessagePromptTemplate, HumanMessagePromptTemplate,)
 
 # Import our custom prompts and avatar data
 from prompts import PERSONALITIES, AVATARS
 
 # --- 1. PAGE SETUP ---
-st.set_page_config(
-    page_title="AI Dating Companion",
-    page_icon="❤️",
-    layout="centered",
-)
+st.set_page_config(page_title="AI Dating Companion",  page_icon="❤️",  layout="centered",)
 
 # Function to load our custom CSS for animations
 def load_local_css(file_name):
