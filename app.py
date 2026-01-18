@@ -1,5 +1,6 @@
 # app.py
 import streamlit as st
+print("--- SCRIPT STARTED ---") 
 import os
 from dotenv import load_dotenv
 
@@ -57,8 +58,7 @@ if "chain" not in st.session_state:
 # Display the title and the animated avatar
 st.title("AI Companion: Lilith")
 st.markdown(f'<img src="{AVATARS["Seductive Tease"]}" class="breathing-avatar">', unsafe_allow_html=True)
-st.markdown("  
-", unsafe_allow_html=True) # A little space
+st.markdown("  ", unsafe_allow_html=True) # A little space
 
 # Display the 18+ disclaimer
 st.warning("**Disclaimer:** This is an AI chatbot for adult audiences (18+). It is not a real person. Please interact responsibly.")
